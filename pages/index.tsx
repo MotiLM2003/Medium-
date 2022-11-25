@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 import Header from '../components/Header/Header';
 import { sanityClient, urlFor } from '../sainty';
 import { Post } from '../typings';
@@ -10,6 +11,7 @@ interface Props {
 	posts: [Post];
 }
 const Home = ({ posts }: Props) => {
+	const [submitted, setSubmitted] = React.useState(false);
 	console.log(posts);
 	return (
 		<div className='max-w-7xl mx-auto'>

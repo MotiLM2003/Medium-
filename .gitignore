@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-meduin
+meduin/node_modules
 # testing
 /coverage
 
